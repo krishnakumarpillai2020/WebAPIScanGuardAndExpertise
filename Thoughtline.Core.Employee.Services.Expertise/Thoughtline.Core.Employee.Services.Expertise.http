@@ -1,0 +1,6 @@
+@Thoughtline.Core.Employee.Services.Expertise_HostAddress = http://localhost:5178
+
+GET {{Thoughtline.Core.Employee.Services.Expertise_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
