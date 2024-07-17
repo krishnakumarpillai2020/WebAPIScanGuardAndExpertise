@@ -22,13 +22,13 @@ namespace Thoughtline.Core.Employee.Services.Expertise.Controllers
         }
         
         [HttpGet]
-        [Route("ShowCategories")]
-        public List<Category> ShowCategories()
+        [Route("GetCategories")]
+        public List<Category> GetCategories()
         {
             MyResponse response = new MyResponse();
             CategoryDAL dal = new CategoryDAL();
             List<Category> listCategories = new List<Category>();           
-            listCategories = dal.ShowCategories();
+            listCategories = dal.GetCategories();
             return listCategories;
         }      
         
